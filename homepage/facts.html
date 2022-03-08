@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+	      <script src="/script.js" defer></script>
+        <title>Learn More</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+      <!-- NAVIGATION BAR-->
+    <nav class="navbar navbar-light" style="background-color: #E26D5C;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="places.html">Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facts.html">Learn More</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+        <body style="background-color:#FFE1A8;"> </body>
+        <h3 style=" font-family: 'Patrick Hand SC', cursive; color:#83846D;"> <center> Learn some fun facts about Astoria :)</center> </h3>
+
+        <div class="genFact">
+          <p> <strong> Click below </strong></p>
+          <button id="myButton">Did you know...</button>
+          <p> <strong> Hope you learned something new! </strong> </p>
+        </div>
+        <p id="fact"></p>
+        <h3 style=" font-family: 'Patrick Hand SC', cursive;"><center> Facts are from <a href= "https://www.queenshometeam.com/blog/50-fun-facts-about-the-astoria-queens-neighborhood/">Queens Home Team </a></center></h3>
+        <script>
+          var factList = [
+            "Astoria was first settled by the Dutch Germans in the 17th century.", /*0*/
+            "In the 1990s, Steinway Street between 28th Avenue and Astoria Boulevard saw the establishment of many Arabic shops, restaurants and cafes, which is unofficially called Little Egypt.", /*1*/
+            "Kaufman Astoria Studios has been longtime host to the PBS series Sesame Street.",/*2*/
+            "Astoria figured prominently in early American filmmaking as one of its initial centers, a heritage preserved today by the Museum of the Moving Image Kaufman Astoria Studios.",/*3*/
+            "Astoria is bounded by the East Riverand is adjacent to three other Queens neighborhoods: Long Island City, Sunnyside(bordering at Northern Boulevard), and Woodside (bordering at 50th Street)."];/*4*/
+          var fact = document.getElementById("fact");
+          var myButton = document.getElementById("myButton");
+          var count = 0;
+
+          if (myButton) {
+            myButton.addEventListener("click", displayFact);
+          }
+
+          function displayFact(){
+            fact.innerHTML = factList[count];
+            count++;
+            if (count == factList.length){
+              count = 0;
+            }
+          }
+        </script>
+    </body>
+</html>
