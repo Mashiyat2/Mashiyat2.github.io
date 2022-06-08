@@ -1,0 +1,130 @@
+body, html {
+  height: 100%;
+}
+li a:hover {
+    background-color: #FAF7C3;
+  }
+
+.bg {
+  background-image: url("backg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #99CFAB;
+  overflow: hidden;
+  padding: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0%;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 22px;
+  }
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.splitt {
+  width: 500;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* STYLE TEXT */
+.intro{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.write{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+/* STYLE IMAGE GALLERY */
+div.gallery {
+  margin: 5px;
+  border: 2px solid #E26D5C;
+  max-width: 30em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.gallery:hover {
+  border: 2px solid #C9CBA3;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  padding: 15px;
+  text-align: center ;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 22px;
+}
+
+/* STYLE FACTS */
+.genFact {
+  background: #A1CBAF;
+  border-radius: 10px;
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 65px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.2em;
+  color: black;
+}
+
+#myButton{
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-top: 18px;
+  color: black;
+  background-color: rgb(243, 243, 34);
+}
+
+#fact {
+  border-style:  none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.2em;
+  color: black;
+
+}
